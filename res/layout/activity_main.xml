@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/bt_unbind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_stop"
+        android:layout_alignBottom="@+id/bt_stop"
+        android:layout_alignLeft="@+id/bt_bind"
+        android:background="@drawable/round_1"
+        android:text="unbind" />
+
+    <Button
+        android:id="@+id/bt_bind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_stop"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="47dp"
+        android:background="@drawable/round_1"
+        android:text="bind" />
+
+    <Button
+        android:id="@+id/bt_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bt_start"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="57dp"
+        android:background="@drawable/round_1"
+        android:text="stop" />
+
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bt_stop"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="142dp"
+        android:background="@drawable/round_1"
+        android:text="start" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_bind"
+        android:layout_alignLeft="@+id/bt_start"
+        android:layout_marginBottom="24dp"
+        android:text="@string/hello_world" />
+
+</RelativeLayout>
