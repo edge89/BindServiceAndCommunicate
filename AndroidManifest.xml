@@ -22,6 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name="com.service.bindserviceandcommunicate.service.MyService" >
+            <intent-filter>
+                <action android:name="com.edge.service" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
