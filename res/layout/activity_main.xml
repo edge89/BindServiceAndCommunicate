@@ -52,6 +52,27 @@
         android:layout_above="@+id/bt_bind"
         android:layout_alignLeft="@+id/bt_start"
         android:layout_marginBottom="24dp"
-        android:text="@string/hello_world" />
+        android:text="@string/hello_world"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/bt_music_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/bt_stop"
+        android:layout_below="@+id/bt_stop"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/round_1"
+        android:text="music on" />
+
+    <Button
+        android:id="@+id/bt_music_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_music_on"
+        android:layout_alignBottom="@+id/bt_music_on"
+        android:layout_alignLeft="@+id/bt_unbind"
+        android:background="@drawable/round_1"
+        android:text="music off" />
 
 </RelativeLayout>
